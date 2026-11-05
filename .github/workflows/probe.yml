@@ -1,0 +1,8 @@
+name: probe
+on:
+  workflow_dispatch:
+jobs:
+  t:
+    runs-on: macos-14
+    steps:
+      - run: sw_vers && echo PUBLIC_REPO_MACOS_OK
